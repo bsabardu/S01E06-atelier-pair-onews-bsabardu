@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+	font-family: 'Open-Sans', sans-serif;
+}
+.container{
+	display: flex
+}
+
+.title{
+	position: fixed;
+	width: 50%;
+	box-sizing: border-box;
+	flex: 1;
+	height: 100vh;
+	background-image: url(./../images/nicole.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.header__site-intro{
+	background-color: rgba(0,0,0,0.5);
+	text-align: right;
+	color:white;
+	padding: 1.5rem 1.5rem 1.5rem 15%;
+}
+.header__secondary-title{
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 1rem 0;
+}
+.header__secondary-title--italic{
+	font-size: 1rem;
+	font-style: italic;
+	font-weight: 500;
+}
+
+.header__content{
+	line-height: 1.5rem;
+}
+.header__title{
+	align-self: flex-start;
+	display:flex;
+	align-items: flex-start;
+}
+
+.header__title-text{
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+
+
+.header__title-logo {
+	width: 50px;
+	margin-right: 1rem;
+}
+
+.footer{
+color: white;
+text-shadow: 1px 1px 5px black;
+}
+
+.footer__links{
+	display: inline;
+	margin: 0 1rem;
+	
+}
+
+.main-content{
+ 	margin-left: 50%;
+	flex: 1;
+	background-color: #f9f9f9;
+}
+
+
+
+.liste-article{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.list-article__item {
+	box-sizing: border-box;
+	border: 1px solid #eaeaea;
+	max-width: 50%;
+	background-color: white;
+	padding: 1rem;
+}
+.article__title{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin:1rem 0;
+	line-height: 1.3em;
+}
+.article__tag{
+	font-size: 0.8rem;
+	color:white;
+	background-color: black;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	display: inline-block;
+	border-radius: 4px;
+}
+.article__tag--news{
+	background-color: #98dc62 ;
+}
+.article__tag--team{
+	background-color: #dc5953;
+}
+.article__tag--work{
+	background-color: #0766f0;
+}
+.author{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0.5rem 0;
+}
+.author__photo{
+	width: 2rem;
+	margin-right: 1rem;
+}
+.author__name{
+	font-weight: 700;
+}
+.author__publication-date{
+	margin-left: 0.3rem;
+	color: #ccc;
+	font-weight: 400;
+}
+.article__content{
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+}
+.article__read-more{
+	font-weight: 700;
+	color: #007bff;
+}
+.article__read-more:hover{
+	color: #0056b3;
+}
+
+
+.main-content__title{
+	font-weight: 700;
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+@media only screen and (max-width: 980px) {
+
+	.container{
+		flex-direction: column;
+	}
+
+	.title {
+		position: relative;
+		width: 100%;
+		align-items: center;
+		background: url(./../images/nicole.jpg) rgba(0,0,0,0.5);
+		background-blend-mode: multiply;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.header__title{
+		align-self: inherit;
+	}
+
+	.header__site-intro {
+		text-align: center;
+		background-color: initial;
+	}
+
+	
+
+	.main-content{
+		margin-left: 0px;
+		padding: 1rem 10% 0 ;
+	}
+
+	.list-article__item{
+	width: 100%;
+	max-width: none;
+	margin: 1rem auto;
+	border-radius: 8px;
+	}
+
+	.footer{
+		position: absolute;
+		bottom: 0;
+	}
+
+
+  }
